@@ -43,7 +43,7 @@ favicon: /img/favicon.png
 
 # Avatar (頭像)
 avatar:
-  img: /img/avatar.png
+  img: https://ooo.0x0.ooo/2025/01/10/OEVMIj.png
   effect: false
 
 # Disable all banner image
