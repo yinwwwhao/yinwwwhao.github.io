@@ -2,7 +2,7 @@
 title: Sth To Tell u
 date: 2025-01-10 14:32:46
 description: 「祂。」
-categories: Broken thoughts
+categories: Broken Thoughts
 ---
 
 # Something To Tell u

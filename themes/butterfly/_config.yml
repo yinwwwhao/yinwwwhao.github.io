@@ -54,7 +54,7 @@ disable_top_img: false
 index_img:
 
 # If the banner of page not setting, it will show the top_img
-default_top_img: https://ooo.0x0.ooo/2024/10/13/ODeGBj.md.jpg
+default_top_img: https://ooo.0x0.ooo/2025/01/11/OE9kfF.jpg
 
 # The banner image of archive page
 archive_img:
@@ -231,7 +231,7 @@ aside:
       enable: false
       icon: fab fa-github
       text: Follow Me
-      link: https://github.com/xxxxxx
+      link: https://github.com/yinwwwhao
   card_announcement:
     enable: true
     content: "Welcome😄"
@@ -358,10 +358,6 @@ algolia_search:
   enable: true
   hits:
     per_page: 8
-    labels:
-      input_placeholder: "Search for Posts"
-      hits_empty: "我们没有找到任何搜索结果: ${query}"
-      hits_stats: "找到${hits}条结果（用时${time} ms）"
 
 
 
