@@ -20,6 +20,23 @@ pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
   trailing_html: true # Set to false to remove trailing '.html' from permalinks
 
+
+algolia:
+  appId: "4BWSA51YW1"
+  apiKey: "633e5c2623b2cf5df26662f787c86ded"
+  adminApiKey: "eba4c6655729ec9b659fe67faa2e5359"
+  chunkSize: 5000
+  indexName: "hexo"
+  fields:
+    - content:strip:truncate,0,500
+    - excerpt:strip
+    - gallery
+    - permalink
+    - photos
+    - slug
+    - tags
+    - title
+
 # Directory
 source_dir: source
 public_dir: public

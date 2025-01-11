@@ -18,6 +18,7 @@ menu:
   关于: /about/ || fas fa-heart
 
 
+
 # Code Blocks (代碼相關)
 # --------------------------------------
 
@@ -79,14 +80,14 @@ category_per_img:
 cover:
   # display the cover or not (是否顯示文章封面)
   index_enable: true
-  aside_enable: true
+  aside_enable: false
   archives_enable: true
   # the position of cover in home page (封面顯示的位置)
   # left/right/both
-  position: both
+  position: left
   # When cover is not set, the default cover is displayed (當沒有設置cover時，默認的封面顯示)
   default_cover:
-    # - https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg
+    #- https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg
 
 # Replace Broken Images (替換無法顯示的圖片)
 error_img:
@@ -354,9 +355,15 @@ katex:
 
 # Algolia search
 algolia_search:
-  enable: false
+  enable: true
   hits:
-    per_page: 6
+    per_page: 8
+    labels:
+      input_placeholder: "Search for Posts"
+      hits_empty: "我们没有找到任何搜索结果: ${query}"
+      hits_stats: "找到${hits}条结果（用时${time} ms）"
+
+
 
 # Local search
 local_search:
