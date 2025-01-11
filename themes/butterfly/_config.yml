@@ -482,7 +482,7 @@ facebook_comments:
 # Twikoo
 # https://github.com/imaegoo/twikoo
 twikoo:
-  envId: https://cayc432.netlify.app
+  envId: https://cayc432-kwikoo.netlify.app/
   region:
   visitor: true
   option:
