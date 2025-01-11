@@ -3,17 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 豪儿的博客
-subtitle: 'lalala'
+title: CAYC432 の blog
+subtitle: ''
 description: ''
 keywords:
-author: yinwwwhao
+author: cayc432
 language: zh-CN
 timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://yinwwwhao.github.io
+url: https://cayc432.netlify.app
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -102,9 +102,9 @@ theme: butterfly
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: git
-  repo: https://github.com/yinwwwhao/yinwwwhao.github.io
-  branch: main
+  type: 
+  repo: 
+  branch: 
 
 # Markdown-it config
 ## Docs: https://github.com/celsomiranda/hexo-renderer-markdown-it/wiki
