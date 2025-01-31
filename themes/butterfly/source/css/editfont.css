@@ -6,17 +6,22 @@ font-family: -apple-system, BlinkMacSystemFont, "LXGW WenKai Screen", "Source Ha
          background-color: #252525;
          color: #252525;
          text-shadow: none;
+         border-radius: 4px;
      }
      .heimu:hover, .heimu:active,
      .heimu:hover .heimu, .heimu:active .heimu {
-         color: white !important;
+        transition: all 0.3s;
+        color: white !important;
     }
     .heimu:hover a, a:hover .heimu,
     .heimu:active a, a:active .heimu {
+        transition: all 0.3s;
         color: lightblue !important;
     }
     .heimu:hover .new, .heimu .new:hover, .new:hover .heimu,
     .heimu:active .new, .heimu .new:active, .new:active .heimu {
+        transition: all 0.3s;
+        opacity: 1;
         color: #BA0000 !important;
     }
    
