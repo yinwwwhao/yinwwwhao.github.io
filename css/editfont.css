@@ -1,28 +1,22 @@
 body {
-font-family: -apple-system, BlinkMacSystemFont, "LXGW WenKai Screen", "Source Han Sans CN", 'Segoe UI', 'Helvetica Neue', Lato, Roboto, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "LXGW WenKai Screen", "Source Han Sans CN", 'Segoe UI', 'Helvetica Neue', Lato, Roboto, 'PingFang SC', 'Microsoft YaHei', sans-serif;
 }
 
- .heimu, .heimu a, a .heimu, .heimu a.new {
-         background-color: #252525;
-         color: #252525;
-         text-shadow: none;
-         border-radius: 4px;
-     }
-     .heimu:hover, .heimu:active,
-     .heimu:hover .heimu, .heimu:active .heimu {
-        transition: all 0.3s;
-        color: white !important;
-    }
-    .heimu:hover a, a:hover .heimu,
-    .heimu:active a, a:active .heimu {
-        transition: all 0.3s;
-        color: lightblue !important;
-    }
-    .heimu:hover .new, .heimu .new:hover, .new:hover .heimu,
-    .heimu:active .new, .heimu .new:active, .new:active .heimu {
-        transition: all 0.3s;
-        opacity: 1;
-        color: #BA0000 !important;
-    }
-   
-   /*阅读更多：https://zh.moegirl.org/MediaWiki:Mobile.css 本文引自萌娘百科(https://zh.moegirl.org)，文字内容默认使用《知识共享 署名-非商业性使用-相同方式共享 3.0》协议。*/
+.heimu,
+.heimu a,
+a .heimu,
+.heimu a.new {
+    background-color: #252525;
+    color: #252525;
+    border-radius: 4px;
+}
+
+.heimu:hover,
+.heimu:active {
+    transition: all 0.3s;
+    color: white !important;
+    border-radius: 4px;
+}
+
+
+/*阅读更多：https://zh.moegirl.org/MediaWiki:Mobile.css 本文引自萌娘百科(https://zh.moegirl.org)，文字内容默认使用《知识共享 署名-非商业性使用-相同方式共享 3.0》协议。*/
