@@ -37,6 +37,14 @@ algolia:
     - tags
     - title
 
+aplayer:
+  meting: true
+
+feed:
+  type: atom
+  path: atom.xml
+  limit: false
+
 # Directory
 source_dir: source
 public_dir: public

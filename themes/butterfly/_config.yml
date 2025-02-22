@@ -35,6 +35,8 @@ code_word_wrap: false
 social:
   fab fa-github: https://github.com/yinwwwhao || Github || '#24292e'
   fas fa-envelope: mailto:448385365@qq.com || Email || '#4a7dbe'
+  fas fa-rss: atom.xml || RSS || '#24292e'
+
 
 # Image (圖片設置)
 # --------------------------------------
@@ -672,7 +674,7 @@ activate_power_mode:
 # canvas_ribbon (靜止彩帶背景)
 # See: https://github.com/hustcc/ribbon.js
 canvas_ribbon:
-  enable: false
+  enable: true
   size: 150
   alpha: 0.6
   zIndex: -1
@@ -789,11 +791,11 @@ wordcount:
 
 # medium-zoom
 # https://github.com/francoischalifour/medium-zoom
-medium_zoom: false
+medium_zoom: true
 
 # fancybox
 # https://fancyapps.com/fancybox/
-fancybox: true
+fancybox: false
 
 # Tag Plugins settings (標籤外掛)
 # --------------------------------------
@@ -870,7 +872,9 @@ lazyload:
   enable: true
   field: site # site/post
   placeholder:
-  blur: false
+  blur: true
+
+  
 
 # PWA
 # See https://github.com/JLHwung/hexo-offline
