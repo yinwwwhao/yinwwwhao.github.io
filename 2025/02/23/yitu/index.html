@@ -1,0 +1,341 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="dark"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>意图 | CAYC432 の blog</title><meta name="author" content="cayc432"><meta name="copyright" content="cayc432"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#0d0d0d"><meta name="description" content="「分析我为什么会有那样不可告人的意图。」">
+<meta property="og:type" content="article">
+<meta property="og:title" content="意图">
+<meta property="og:url" content="https://cayc432.netlify.app/2025/02/23/yitu/index.html">
+<meta property="og:site_name" content="CAYC432 の blog">
+<meta property="og:description" content="「分析我为什么会有那样不可告人的意图。」">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://ooo.0x0.ooo/2025/01/10/OEVMIj.png">
+<meta property="article:published_time" content="2025-02-23T00:28:31.000Z">
+<meta property="article:modified_time" content="2025-02-22T18:19:15.053Z">
+<meta property="article:author" content="cayc432">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://ooo.0x0.ooo/2025/01/10/OEVMIj.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://cayc432.netlify.app/2025/02/23/yitu/index.html"><link rel="preconnect" href="//unpkg.com"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://unpkg.com/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://unpkg.com/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!true && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          const mediaQueryDark = window.matchMedia('(prefers-color-scheme: dark)')
+          const mediaQueryLight = window.matchMedia('(prefers-color-scheme: light)')
+          
+          if (theme === undefined) {
+            if (mediaQueryLight.matches) activateLightMode()
+            else if (mediaQueryDark.matches) activateDarkMode()
+            else {
+              const hour = new Date().getHours()
+              const isNight = hour <= 6 || hour >= 18
+              isNight ? activateDarkMode() : activateLightMode()
+            }
+            mediaQueryDark.addEventListener('change', () => {
+              if (saveToLocal.get('theme') === undefined) {
+                e.matches ? activateDarkMode() : activateLightMode()
+              }
+            })
+          } else {
+            theme === 'light' ? activateLightMode() : activateDarkMode()
+          }
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: {"chs_to_cht":"已切换为繁体中文","cht_to_chs":"已切换为简体中文","day_to_night":"已切换为深色模式","night_to_day":"已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#1f1f1f","position":"bottom-left"},
+  infinitegrid: {
+    js: 'https://unpkg.com/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: true,
+  },
+  autoDarkmode: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '意图',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  isShuoshuo: false
+}</script><link rel="stylesheet" href="/css/editfont.css" /><link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/lxgw-wenkai-screen-webfont/1.7.0/style.min.css" /><meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="CAYC432 の blog" type="application/atom+xml">
+<link rel="stylesheet" href="/assets/css/APlayer.min.css" class="aplayer-style-marker">
+<script src="/assets/js/APlayer.min.js" class="aplayer-script-marker"></script>
+<script src="/assets/js/Meting.min.js" class="meting-script-marker"></script>
+</head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://ooo.0x0.ooo/2025/01/10/OEVMIj.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">5</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(https://ooo.0x0.ooo/2025/01/11/OE9kfF.jpg);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">CAYC432 の blog</span></a><a class="nav-page-title" href="/"><span class="site-name">意图</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">意图</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2025-02-23T00:28:31.000Z" title="发表于 2025-02-23 00:28:31">2025-02-23</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-02-22T18:19:15.053Z" title="更新于 2025-02-22 18:19:15">2025-02-22</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/Broken-Thoughts/">Broken Thoughts</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">总字数:</span><span class="word-count">2.7k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>7分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><h1>意图</h1>
+
+    <div id="aplayer-hkfFmvTc" class="aplayer aplayer-tag-marker meting-tag-marker"
+         data-id="17989055" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="true" data-theme="#555"
+    ></div>
+<p>分析我为什么会有那样不可告人的意图。</p>
+<p>我自己，对于容貌来说有一定的忧虑，为什？可能吧，因为我认为太丑对于人类来说并不是一件好事，或许太丑的人在人生上有诸多不利，面试第一印象不行，找对象找不到，与人交往被看不起。还有，丑和穷似乎在某种方面有些联系。外貌大抵是一种心灵上的映射。某个长的可爱的女孩纸，心理也多数是乐观的吧，某个尖嘴猴腮，满脸麻子，皮肤黝黑的一男子，或许心灵上也总会透露出一种猥锁之意。但，究竞谁是谁的充分条件？坚信以貌取人并不能叫做所谓唯物主义，一味地忽视外貌而奋勇直追内心也不可称作唯心主义。长的好看可爱的也许也会心灵可恶，丑到想吐的人或许也会人品好的要命。</p>
+<p>然而，容貌是不了改变的，我们可以靠它，但它并不是唯一的手段。那只能决定着一种下限。</p>
+<p>再而言之，我爱你，三个字，并不能成为我感受这个世界的唯一手段。哪怕在世界的尽头，等待，随着时间如同大海一样干涸，又何必要问这活着的意义何在？我今不过在观察着，承载着他的某种记忆与痛苦，等待着要被解决的未来。</p>
+<p>我，又为何发疯？是预期与现实的嫉妒，强烈不同，基于现实的思想却再也难逃进诡异的现实。我就咋啊，意淫，广义上的嗯。对此产生了自己能力的质疑，有对这种质疑产生了一种不屑，逐渐产生了一种报复的心理，那是距离嫉妒最远的东西。可惜啊啊，所有的矛头都指向了自己。这时一种报复，不明意义的。</p>
+<p>其实我并不由此而感到伤心，毕竟我的情感仿佛存于忧郁和可笑之间。</p>
+<p>好了，我也应该去想，我在那些人们的眼中是一个什么样的看法。</p>
+<p>耿咏说了，我是黄的让他受不了的人。那或许是因为我是过于开放了吧。那天我问硕，为什么小应如此受欢迎，他说，因为她开朗。好吧，我看似是走进了一个错误的道路。我喜欢冉晰元声音的惰懒，张哲瑞的可爱，杨仁宇的不时阴阳怪气，吴熠然的不时推下眼镜，郭字萌不知道为什么笑着说了一句。我知道，这一切也不过是一种纯粹的呓语。每个人都有他们独立的人格。而我，因为毫无掩饰以至于失去自我人格。</p>
+<p>闻咖啡味了，好苦。明天就是所谓的期中考试，我心态也是照样的差我曾经想过让我自己去忘记我所谓的那种令人感到奇怪的性格，但没用。喝一口水就感受到它从我的身体中心径直的穿过，还是有一点温热。体育课，也在一边远远的望。看着他们似乎是想要远离，却又像是渴望受到关心。以至于在东西之间交错不前。我或许要认为我有一种心病，一种慢性病。慢到天地荒芜才走过它的一瞬。一瞬也预知着不可逆转的瓦解。一瞬也预知着不可逆转的瓦解。</p>
+<p>那也是一种心态。我今天也是从子豪身上学到了许多，那或许是一种豁达昂扬的态度虽说可能某时有沉闷抑郁的心情，但也是绝对不会悲观。而我恐怕是在一片悲伤或是无言之中寻找一种不同寻常的确幸罢了。</p>
+<img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://ooo.0x0.ooo/2025/02/23/OQawNx.jpg" alt="The Knife" style="zoom:50%;" />
+<p>也许不如谈谈为什么要随身带着一把小刀。首先，也或许是为了一种安全感，我当初在和我爸吵架后也似乎会这样做，反而，我如今还是有些想不清楚我和我爸吵架的那段日子了或许能有个发泄的机会是多么珍贵，而如今只可让它慢慢发酵化成泡沫，差点让我感受到它不曾存在过。其次，耍酷，额，可是我为何需要这种方面的关注。我揣测我的心理很幼稚，性取向和常人有些不同，性别认知又有些差异。可你能不能不要在妄想了，认清自我在妄想后还戏谑般的假笑。你还说过一句，是你创造了这个囚笼般的黑夜，贴着星空的贴纸。</p>
+<p>可惜，这世界仿佛结局一定。</p>
+<p>没人为我加冕</p>
+<p>也没人摧毁我的意图</p>
+<p>蜷缩在阴影之下，可笑吗？用那你似乎最讨厌的玻璃看向自己，又相信那是最真实的你的自己。我可以想某人一样无脑且快乐的活着，但这于我如同苟活。我拥有着最壮烈的无畏，与最微薄的勇气。他们是怎么存在于我这里的。</p>
+<p>还不是因为你自己认为你太丑，还不自信，满脑子里想着净是优先择偶权。笨蛋，我可是人，根本没有这么一说。时间是最令人恐怖的东西，它能将最不完美的事情磨合。不要提起那个可耻的理由，让他忘掉。多么漫无边际的预期。</p>
+<p>人设。</p>
+<p>是不是有人在孤立我。</p>
+<p>当你在面对祂时，仿佛你的一切思想都变得好幼稚。我知道，有些人见过了许多，体会了许多。祂在面对他人的痛苦时，会不会麻木？我不知道，那个曾经非常有趣的孩子啊，总有一天会有人在其面前倒下，看着死去。那些人，真的能理解那些经历过痛苦的人的痛苦吗？有一天会有人在其面前倒下，看着死去。那些人，真的能理解那些经历过痛苦的人的痛苦吗？但你也别忘了，那似乎也是你的意图，袖在我的思想中毁灭而又浴火重生。</p>
+<p>你是否想让知道你的痛苦。那是你拥有勇气的理由？那是你疯癫般的喜与忧之中所残存的一丝目的？才不是。我快乐是我快乐，而我悲伤是反思自己的快乐之一。</p>
+<p>我现在真的好想不学习。不要学习，像是为了报复某某那一群人的。那是我内心的一种外在投射，哈，那或许也是因为晚上没有吃饭并且突然猛地认为我有些丑陋。那会没事的。如果我认为爱能够解决这一切的话，那我也还是幼稚。不要吊死在一个树上啊。好吧，我也不该因为而想到同性恋了，因为我的同。真是一个微妙的情感价值而我啊，那是一个人，需要众多伤疤去缝补。我所谓的价值是伪装的吗。哈，也该庆幸我那伟大的演技。有趣。</p>
+<img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://ooo.0x0.ooo/2025/01/11/OE9z56.jpg" alt="FAKEMEAT" style="zoom:50%;" />
+<p>又是一次月考，你又会想着抑郁了。你的理由其实很简单，不过是为了分班。能留在一个好的班级，能见识到好的朋友，过上好的生活，也能有个好的地位。唉，这种想法是这么单纯吗，难道只不过是为了证明自己，证明自己所谓的努力，担心自己的前途。哈，然而你又究竟在考试时用功了多少呢？大多数是力不从心，以至于感到一股壮志未酬的奇怪感受。你也不要停止幻想了，第三次月考，理科第二百零一名。你想进零班，那你就清楚你的目的，你的…</p>
+<p>我清楚，我的意图。</p>
+<p>周考，好像考的都很，令人痛苦。你啊，就只能这样了吗，还是，唉不是什么。你是觉得你自己在这个班级里的存在感很低吗？而，我，你好像说过你已经自甘堕落。堕落，堕落。你在存在？还是没有存在？难道他们提及你的名字，就强化了你的存在？可这些看似无穷无尽的问号之中寻得救赎？也罢。没有演员期望把自己的角色扮演得太差。好啊，总之你要变得optimistic，你要不是如此，你会很痛苦的。我，不相信我们眼中的平等，你想着努力，努力，心灰意冷，自己这架机器已经仿若完全失去了意义。然而，这些文字，它马上要触碰到了那个高贵的遗迹。</p>
+<p>你，没有任何缘由的，将刀口插进祂的胸口之中。咒骂着该死去的脑子，该唤醒的灵魂。然而你本不应相信灵魂已经沉睡，你应知道，你的妄想就根本不可能。这些毫无逻辑的文字，这些无意义的字母组合，爱。你是否应相信，这，爱。</p>
+<p>让我痛苦却又绝望地奔跑的，是爱。</p>
+<p>如果爱有奇迹的话，</p>
+<p>那也绝对不可能。</p>
+<p>那就让这份期许永世不灭，好嘛？</p>
+<p>咳咳，明明我已经忘记了那段痛苦的记忆。也希望你，可别再来啊。</p>
+<img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://ooo.0x0.ooo/2025/02/23/OQaIcX.jpg" alt="所谓「神迹」" style="zoom:50%;" />
+<p>如果我还能再去思索一会儿，再一次沉寂在这个痛苦之中的话…然而这没必要，分班的结局已经落下，而我终会迎来这个故事的结局。这正如我曾经所说的话，「This is not the worst ending.」</p>
+<p>再给我荒废个十分钟，五分钟，三分钟，直到时间在这个世界上已无踪迹。再一次，这个我渴望得到的东西，可憎的东西，有一次忽视了我，不是吗？我知道这不是这样的啊。是的啊这时候也只有你才能够担当起救赎啊。这样说着这些那些无意义的文字，静静的待着听着他们所述的言语，我从未渴望过得到回应，和听得清楚那个谎言。</p>
+<p>yaq~</p>
+<hr>
+<p>这不过是那几天分班之前所说的话语而已。</p>
+<p>这种无趣而又混乱的逻辑也是令人生疼。正如我日记里所记的那样。但一点区别是我日记最近写的实在太意识流了以至于我有了一种我很会写的一个错觉。</p>
+<p>这些最初是在学校平板上写的，又麻烦了一点搞到了这里。</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="https://cayc432.netlify.app">cayc432</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="https://cayc432.netlify.app/2025/02/23/yitu/">https://cayc432.netlify.app/2025/02/23/yitu/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来源 <a href="https://cayc432.netlify.app" target="_blank">CAYC432 の blog</a>！</span></div></div><div class="tag_share"><div class="post-share"><div class="social-share" data-image="https://ooo.0x0.ooo/2025/01/10/OEVMIj.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://unpkg.com/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://unpkg.com/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related full-width" href="/2025/01/31/pain/" title="苦楚"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info"><div class="info-1"><div class="info-item-1">上一篇</div><div class="info-item-2">苦楚</div></div><div class="info-2"><div class="info-item-1">也总该有人想过。</div></div></div></a></nav><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="twikoo-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://ooo.0x0.ooo/2025/01/10/OEVMIj.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">cayc432</div><div class="author-info-description"></div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">5</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div><div class="card-info-social-icons"><a class="social-icon" href="https://github.com/yinwwwhao" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:448385365@qq.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a><a class="social-icon" href="/atom.xml" target="_blank" title="RSS"><i class="fas fa-rss" style="color: #24292e;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">Welcome😄</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-number">1.</span> <span class="toc-text">意图</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/02/23/yitu/" title="意图">意图</a><time datetime="2025-02-23T00:28:31.000Z" title="发表于 2025-02-23 00:28:31">2025-02-23</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/01/31/pain/" title="苦楚">苦楚</a><time datetime="2025-01-31T20:34:46.000Z" title="发表于 2025-01-31 20:34:46">2025-01-31</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/01/10/sth2tell/" title="Sth To Tell u">Sth To Tell u</a><time datetime="2025-01-10T14:32:46.000Z" title="发表于 2025-01-10 14:32:46">2025-01-10</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/10/13/Campus/running/" title="Campus Running">Campus Running</a><time datetime="2024-10-13T09:32:20.000Z" title="发表于 2024-10-13 09:32:20">2024-10-13</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/08/05/hello/" title="hello">hello</a><time datetime="2023-08-05T10:28:20.000Z" title="发表于 2023-08-05 10:28:20">2023-08-05</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2023 - 2025 By cayc432</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="前往评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://unpkg.com/instant.page/instantpage.js" type="module"></script><script src="https://unpkg.com/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script src="https://unpkg.com/node-snackbar/dist/snackbar.min.js"></script><script>(() => {
+  const panguFn = () => {
+    if (typeof pangu === 'object') pangu.autoSpacingPage()
+    else {
+      btf.getScript('https://unpkg.com/pangu/dist/browser/pangu.min.js')
+        .then(() => {
+          pangu.autoSpacingPage()
+        })
+    }
+  }
+
+  const panguInit = () => {
+    if (false){
+      GLOBAL_CONFIG_SITE.isPost && panguFn()
+    } else {
+      panguFn()
+    }
+  }
+
+  btf.addGlobalFn('pjaxComplete', panguInit, 'pangu')
+  document.addEventListener('DOMContentLoaded', panguInit)
+})()</script><div class="js-pjax"><script>(() => {
+  const isShuoshuo = GLOBAL_CONFIG_SITE.isShuoshuo
+  const option = null
+
+  const getCount = () => {
+    const countELement = document.getElementById('twikoo-count')
+    if(!countELement) return
+    twikoo.getCommentsCount({
+      envId: 'https://cayc432-kwikoo.netlify.app/.netlify/functions/twikoo',
+      region: '',
+      urls: [window.location.pathname],
+      includeReply: false
+    }).then(res => {
+      countELement.textContent = res[0].count
+    }).catch(err => {
+      console.error(err)
+    })
+  }
+
+  const init = (el = document, path = location.pathname) => {
+    twikoo.init({
+      el: el.querySelector('#twikoo-wrap'),
+      envId: 'https://cayc432-kwikoo.netlify.app/.netlify/functions/twikoo',
+      region: '',
+      onCommentLoaded: () => {
+        btf.loadLightbox(document.querySelectorAll('#twikoo .tk-content img:not(.tk-owo-emotion)'))
+      },
+      ...option,
+      path: isShuoshuo ? path : (option && option.path) || path
+    })
+
+    GLOBAL_CONFIG_SITE.isPost && getCount()
+
+    isShuoshuo && (window.shuoshuoComment.destroyTwikoo = () => {
+      if (el.children.length) {
+        el.innerHTML = ''
+        el.classList.add('no-comment')
+      }
+    })
+  }
+
+  const loadTwikoo = (el, path) => {
+    if (typeof twikoo === 'object') setTimeout(() => init(el, path), 0)
+    else btf.getScript('https://unpkg.com/twikoo/dist/twikoo.all.min.js').then(() => init(el, path))
+  }
+
+  if (isShuoshuo) {
+    'Twikoo' === 'Twikoo'
+      ? window.shuoshuoComment = { loadComment: loadTwikoo }
+      : window.loadOtherComment = loadTwikoo
+    return
+  }
+
+  if ('Twikoo' === 'Twikoo' || !true) {
+    if (true) btf.loadComment(document.getElementById('twikoo-wrap'), loadTwikoo)
+    else loadTwikoo()
+  } else {
+    window.loadOtherComment = loadTwikoo
+  }
+})()</script></div><script defer="defer" id="ribbon" src="https://unpkg.com/butterfly-extsrc/dist/canvas-ribbon.min.js" size="150" alpha="0.6" zIndex="-1" mobile="false" data-click="false"></script><script src="https://unpkg.com/pjax/pjax.min.js"></script><script>(() => {
+  const pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+  window.pjax = new Pjax({
+    elements: 'a:not([target="_blank"])',
+    selectors: pjaxSelectors,
+    cacheBust: false,
+    analytics: false,
+    scrollRestoration: false
+  })
+
+  const triggerPjaxFn = (val) => {
+    if (!val) return
+    Object.values(val).forEach(fn => fn())
+  }
+
+  document.addEventListener('pjax:send', () => {
+    // removeEventListener
+    btf.removeGlobalFnEvent('pjaxSendOnce')
+    btf.removeGlobalFnEvent('themeChange')
+
+    // reset readmode
+    const $bodyClassList = document.body.classList
+    if ($bodyClassList.contains('read-mode')) $bodyClassList.remove('read-mode')
+
+    triggerPjaxFn(window.globalFn.pjaxSend)
+  })
+
+  document.addEventListener('pjax:complete', () => {
+    btf.removeGlobalFnEvent('pjaxCompleteOnce')
+    document.querySelectorAll('script[data-pjax]').forEach(item => {
+      const newScript = document.createElement('script')
+      const content = item.text || item.textContent || item.innerHTML || ""
+      Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+      newScript.appendChild(document.createTextNode(content))
+      item.parentNode.replaceChild(newScript, item)
+    })
+
+    triggerPjaxFn(window.globalFn.pjaxComplete)
+  })
+
+  document.addEventListener('pjax:error', e => {
+    if (e.request.status === 404) {
+      pjax.loadUrl('/404.html')
+    }
+  })
+})()</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
