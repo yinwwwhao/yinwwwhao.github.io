@@ -1,6 +1,6 @@
 ---
 title: 意图
-date: 2025-02-23 0:28:31
+date: 2025-02-23 02:28:31
 description: 「分析我为什么会有那样不可告人的意图。」
 categories: Broken Thoughts
 ---
