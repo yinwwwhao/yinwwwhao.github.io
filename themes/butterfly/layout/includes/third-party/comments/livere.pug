@@ -2,7 +2,7 @@
 
 script.
   (() => {
-    const isShuoshuo = GLOBAL_CONFIG_SITE.isShuoshuo
+    const isShuoshuo = GLOBAL_CONFIG_SITE.pageType === 'shuoshuo'
 
     const loadLivere = (el, path) => {
       window.livereOptions = {
@@ -37,7 +37,7 @@ script.
         : window.loadOtherComment = loadLivere
       return
     }
-  
+
     if ('!{use[0]}' === 'Livere' || !!{lazyload}) {
       if (!{lazyload}) btf.loadComment(document.getElementById('lv-container'), loadLivere)
       else loadLivere()
