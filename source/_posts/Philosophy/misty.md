@@ -2,6 +2,7 @@
 date: 2026-7-11 19:21:44
 title: 雾霭「HAZE」
 description: 我想起来一段很长的故事。
+categories: Broken Thoughts
 ---
 # 雾霭「HAZE」
 
