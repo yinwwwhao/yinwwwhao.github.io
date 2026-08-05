@@ -1,0 +1,26 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "LXGW WenKai Screen", "Source Han Sans CN", 'Segoe UI', 'Helvetica Neue', Lato, Roboto, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+}
+
+.heimu,
+.heimu a,
+a .heimu,
+.heimu a.new {
+    background-color: #252525;
+    color: #252525;
+    border-radius: 4px;
+}
+
+.heimu:hover,
+.heimu:active {
+    transition: all 0.3s;
+    color: white !important;
+    border-radius: 4px;
+}
+
+.container p {
+    text-indent: 2em;
+    font-size: 18px;
+}
+
+/*阅读更多：https://zh.moegirl.org/MediaWiki:Mobile.css 本文引自萌娘百科(https://zh.moegirl.org)，文字内容默认使用《知识共享 署名-非商业性使用-相同方式共享 3.0》协议。*/
