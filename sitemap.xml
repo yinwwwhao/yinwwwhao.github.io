@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://cayc432.netlify.app/link/index.html</loc>
+    <loc>https://cayc432.netlify.app/gallery/wallpaper.html</loc>
     
     <lastmod>2026-08-05</lastmod>
     
@@ -20,7 +20,25 @@
   </url>
   
   <url>
+    <loc>https://cayc432.netlify.app/link/index.html</loc>
+    
+    <lastmod>2026-08-05</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://cayc432.netlify.app/2023/08/05/hello/</loc>
+    
+    <lastmod>2026-08-05</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://cayc432.netlify.app/2025/06/07/Literature/saying/</loc>
     
     <lastmod>2026-08-05</lastmod>
     
@@ -47,15 +65,6 @@
   </url>
   
   <url>
-    <loc>https://cayc432.netlify.app/2025/05/02/Philosophy/dao/</loc>
-    
-    <lastmod>2026-08-05</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://cayc432.netlify.app/2026/06/08/Philosophy/birthday/</loc>
     
     <lastmod>2026-08-05</lastmod>
@@ -66,6 +75,15 @@
   
   <url>
     <loc>https://cayc432.netlify.app/2025/03/02/Philosophy/manyi/</loc>
+    
+    <lastmod>2026-08-05</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://cayc432.netlify.app/2025/05/02/Philosophy/dao/</loc>
     
     <lastmod>2026-08-05</lastmod>
     
@@ -119,6 +137,15 @@
   </url>
   
   <url>
+    <loc>https://cayc432.netlify.app/2024/10/13/Campus/running/</loc>
+    
+    <lastmod>2026-08-05</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://cayc432.netlify.app/about/index.html</loc>
     
     <lastmod>2026-08-05</lastmod>
@@ -138,33 +165,6 @@
   
   <url>
     <loc>https://cayc432.netlify.app/gallery/index.html</loc>
-    
-    <lastmod>2026-08-05</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://cayc432.netlify.app/gallery/wallpaper.html</loc>
-    
-    <lastmod>2026-08-05</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://cayc432.netlify.app/2025/06/07/Literature/saying/</loc>
-    
-    <lastmod>2026-08-05</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://cayc432.netlify.app/2024/10/13/Campus/running/</loc>
     
     <lastmod>2026-08-05</lastmod>
     
