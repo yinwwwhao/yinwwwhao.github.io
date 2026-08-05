@@ -2,6 +2,7 @@
 date: 2026-06-08 18:33:32
 title: 今天我生日哦o
 description: 其实我什么都不知道啊
+categories: Philosophy
 ---
 # 生日
 

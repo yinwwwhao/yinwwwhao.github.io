@@ -1,7 +1,7 @@
 title: 一个小故事
 date: 2025-12-13 21:16:41
 description: 一个可可爱爱软软糯糯的美好小故事（
-categories: Broken Thoughts
+categories: Literature
 
 ---
 

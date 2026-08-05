@@ -2,6 +2,7 @@
 title: 星
 date: 2025-08-03 21:48:23
 description: 这是一颗星星的心脏在跳啊跳，可祂忘记了死亡。
+categories: Literature
 ---
 
 # 星

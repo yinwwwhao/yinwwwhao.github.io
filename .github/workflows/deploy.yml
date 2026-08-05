@@ -1,0 +1,44 @@
+# .github/workflows/deploy.yml
+name: Deploy Hexo Blog to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  # 替换为你的默认分支名，可能是 master
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # 允许工作流推送代码到部署仓库
+    steps:
+      # 1. 拉取源码
+      - name: Checkout Source
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive # 如果你的主题是 git submodule，此项很重要[reference:4]
+
+      # 2. 设置 Node.js 环境
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20' # 替换为你本地的 Node.js 版本[reference:5]
+
+      # 3. 使用 Yarn 安装依赖
+      - name: Install Dependencies with Yarn
+        run: yarn install --frozen-lockfile # 严格按照 yarn.lock 安装[reference:6]
+
+      # 4. 清理并生成静态文件
+      - name: Generate Static Files
+        run: |
+          npx hexo clean
+          npx hexo generate
+
+      # 5. 部署到 GitHub Pages
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }} 
+          publish_dir: ./public # 指定要部署的文件夹
+          # 如果部署到 username.github.io 仓库，且想部署到 main 分支，可添加：
+          # publish_branch: main

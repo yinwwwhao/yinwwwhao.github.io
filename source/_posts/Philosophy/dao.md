@@ -2,6 +2,7 @@
 title: 我导晕了
 date: 2025-05-02 12:07:11
 description: 我0721追逐的意义不过是某种神性罢了
+categories: Philosophy
 ---
 
 ## 这世间「我」的存在
