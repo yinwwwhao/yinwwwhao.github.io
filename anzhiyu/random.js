@@ -1,3 +1,3 @@
-var posts=["2023/08/05/hello/","2026/09/25/Broken/中秋之下/","2024/10/13/Campus/running/","2025/06/07/Literature/saying/","2025/01/10/Literature/sth2tell/","2025/02/23/Literature/yitu/","2026/06/08/Philosophy/birthday/","2025/05/02/Philosophy/dao/","2025/03/02/Philosophy/manyi/","2026/07/11/Philosophy/misty/","2025/01/31/Philosophy/pain/","2026/01/24/Poems/poems1/","2025/12/13/Story/ALittleStory/","2025/08/03/Story/star/"];function toRandomPost(){
+var posts=["2023/08/05/hello/","2026/09/25/Broken/中秋之下/","2024/10/13/Campus/running/","2025/06/07/Literature/saying/","2025/01/10/Literature/sth2tell/","2025/02/23/Literature/yitu/","2026/07/11/Philosophy/misty/","2025/01/31/Philosophy/pain/","2025/03/02/Philosophy/manyi/","2026/01/24/Poems/poems1/","2025/12/13/Story/ALittleStory/","2025/08/03/Story/star/","2025/05/02/Philosophy/dao/","2026/06/08/Philosophy/birthday/"];function toRandomPost(){
     pjax.loadUrl('/'+posts[Math.floor(Math.random() * posts.length)]);
   };
