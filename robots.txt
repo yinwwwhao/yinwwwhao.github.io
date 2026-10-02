@@ -1,3 +1,3 @@
 User-agent: *
 Allow: *
-Sitemap: https://cayc432.netlify.app/sitemap.xml
+Sitemap: https://cayc432.zh.kg/sitemap.xml
