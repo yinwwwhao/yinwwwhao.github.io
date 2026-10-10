@@ -1,3 +1,7 @@
 User-agent: *
 Allow: /
+
+# 站内搜索索引：内容是全部文章的全文副本，纯重复内容，没必要进索引
+Disallow: /search.xml
+
 Sitemap: https://cayc432.netlify.app/sitemap.xml
